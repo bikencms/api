@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('import', 'Controller@import')->name('import');
+Route::post('extract', 'Controller@extractFormUpload')->name('extract');
